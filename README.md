@@ -8,9 +8,10 @@ spark 2.4
 graphframes 0.7.0
 ```
 
-After building the docker image, be sure to forward port `8888` when starting it:
+Build the image and take note of the `id` to run the container. Be sure to forward port `8888` when starting it:
 
 ```bash
+docker build .
 docker run -t --rm -p 8888:8888 <image-id>
 ```
 
