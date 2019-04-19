@@ -2,6 +2,12 @@
 
 I found that connecting [GraphFrames](https://github.com/graphframes/graphframes) to [pyspark](http://spark.apache.org/) inside a Jupyter notebook was trickier than I expected. This Dockerfile is the simplest way I found to get it to work. It is based on `jupyter/pyspark-notebook`, which seemed to be a reasonable starting point.
 
+```
+python 3.7
+spark 2.4
+graphframes 0.7.0
+```
+
 After building the docker image, be sure to forward port `8888` when starting it:
 
 ```bash
